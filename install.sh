@@ -3,7 +3,7 @@ if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root" 
    exit 1
 fi
-apt install git apache2 mysql phpmyadmin
+apt install git apache2 mysql-server phpmyadmin
 git clone https://github.com/Vyfe-project/vyfe-pi.git /var/www/html/vyfe-pi
 
 PASSWDDB="$(openssl rand -base64 12)"
