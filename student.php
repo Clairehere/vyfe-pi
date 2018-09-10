@@ -1,4 +1,4 @@
-<?php
+test <?php
 include 'functions.php';
 include 'head.php';
 ?>
